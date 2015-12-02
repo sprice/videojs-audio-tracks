@@ -1,6 +1,6 @@
 {
   "name": "videojs-audio-tracks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Access multiple audio tracks in a video",
   "scripts": {
     "build": "npm run sass; npm run build-dist",

@@ -10,10 +10,15 @@
   "keywords": [
     "videojs",
     "plugin",
-    "resume"
+    "audio",
+    "description"
   ],
   "author": "Shawn Price",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sprice/videojs-audio-tracks"
+  },
   "devDependencies": {
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",

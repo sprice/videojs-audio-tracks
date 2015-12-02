@@ -1,0 +1,7 @@
+.video-js button.vjs-audio-description-control { font-family: VideoJS; font-weight: normal; font-style: normal; color: #73859f; }
+
+.vjs-audio-description-control:before { content: '\f11d'; }
+
+.video-js button.vjs-da-enabled.vjs-audio-description-control { color: #fff; }
+
+.video-js button.vjs-audio-description-control:hover { color: #fff; cursor: pointer; }

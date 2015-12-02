@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <link href="css/video-js.min.css" rel="stylesheet">
+    <link href="css/videojs-audio-tracks.min.css" rel="stylesheet">
+    <script src="js/video.min.js" type="text/javascript"></script>
+    <script src="js/videojs-audio-tracks.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <video id="example-video" width="640" height="265" class="video-js vjs-default-skin" controls poster="http://video-js.zencoder.com/oceans-clip.png">
+        <source src="https://s3.amazonaws.com/sprice-testing/ocean-two-audio-tracks.mp4" type='video/mp4'>
+      </video>
+
+    <script>
+        'use strict';
+        var player = videojs('example-video');
+        player.AudioTracks({
+          default: 0,
+          descriptive: 1
+        });
+    </script>
+  </body>
+</html>

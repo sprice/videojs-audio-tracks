@@ -19,6 +19,6 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-copy": "^0.8.2",
     "video.js": "5.1.0",
-    "videojs-audio-tracks": "^0.1.0"
+    "videojs-audio-tracks": "^0.2.0"
   }
 }

@@ -47,7 +47,9 @@ let AudioTracks = function(options) {
         trackSettings: options,
         tracks: audioTracks
       };
-      this.controlBar.addChild('AudioDescriptionToggle', buttonOptions);
+      var AudioDescriptionToggle = this.controlBar.addChild('AudioDescriptionToggle', buttonOptions);
+      player.controlBar.el().insertBefore(AudioDescriptionToggle.el(), player.controlBar.fullscreenToggle.el());
+
     }
   });
 };

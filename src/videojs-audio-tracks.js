@@ -1,6 +1,6 @@
-let videojs = require('video.js');
-let Component = videojs.getComponent('Component');
-let Button = videojs.getComponent('Button');
+import videojs from 'video.js';
+const Component = videojs.getComponent('Component');
+const Button = videojs.getComponent('Button');
 
 class AudioDescriptionToggle extends Button {
 
@@ -34,7 +34,7 @@ class AudioDescriptionToggle extends Button {
 AudioDescriptionToggle.prototype.controlText_ = 'Audio Description';
 videojs.registerComponent('AudioDescriptionToggle', AudioDescriptionToggle);
 
-let AudioTracks = function(options) {
+const AudioTracks = function(options) {
 
   let player = this;
   player.on('loadeddata', function () {
@@ -49,7 +49,6 @@ let AudioTracks = function(options) {
       };
       var AudioDescriptionToggle = this.controlBar.addChild('AudioDescriptionToggle', buttonOptions);
       player.controlBar.el().insertBefore(AudioDescriptionToggle.el(), player.controlBar.fullscreenToggle.el());
-
     }
   });
 };

@@ -1,30 +1,16 @@
-// Text, icons, hover states
 $primary-foreground-color: #fff;
-
-// Control backgrounds (control bar, big play, menus)
 $primary-background-color: #2B333F !default;
-$primary-background-transparency: 0.7 !default;
-
-// Hover states, slider backgrounds
 $secondary-background-color: lighten($primary-background-color, 33%) !default;
-$secondary-background-transparency: 0.5 !default;
 
-.video-js button.vjs-audio-description-control {
-  font-family: VideoJS;
-  font-weight: normal;
-  font-style: normal;
+.video-js button.vjs-icon-audio-description {
   color: $secondary-background-color;
 }
 
-.vjs-audio-description-control:before {
-  content: '\f11d';
+.video-js button.vjs-da-enabled.vjs-icon-audio-description {
+  color: $primary-foreground-color;
 }
 
-.video-js button.vjs-da-enabled.vjs-audio-description-control {
-  color: #fff;
-}
-
-.video-js button.vjs-audio-description-control:hover {
-  color: #fff;
+.video-js button.vjs-icon-audio-description:hover {
+  color: $primary-foreground-color;
   cursor: pointer;
 }

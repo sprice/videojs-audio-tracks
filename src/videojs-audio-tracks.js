@@ -15,7 +15,7 @@ class AudioDescriptionToggle extends Button {
   }
 
   buildCSSClass() {
-    return `vjs-audio-description-control ${super.buildCSSClass()}`;
+    return `vjs-icon-audio-description ${super.buildCSSClass()}`;
   }
 
   handleClick() {

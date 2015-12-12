@@ -1,7 +1,7 @@
 {
   "name": "videojs-audio-tracks",
   "version": "0.2.0",
-  "description": "Access multiple audio tracks in a video",
+  "description": "Access multiple audio tracks in Video.js",
   "scripts": {
     "build": "npm run sass; npm run build-dist",
     "sass": "mkdir -p dist/ && ./node_modules/.bin/node-sass --output-style compact ./src/videojs-audio-tracks.scss dist/videojs-audio-tracks.min.css",

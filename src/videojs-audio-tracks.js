@@ -1,10 +1,9 @@
 import videojs from 'video.js';
-const Component = videojs.getComponent('Component');
 const Button = videojs.getComponent('Button');
 
 class AudioDescriptionToggle extends Button {
 
-  constructor(player, options){
+  constructor(player, options) {
     super(player, options);
 
     this.currentAudioTrack = 0;
@@ -36,10 +35,9 @@ videojs.registerComponent('AudioDescriptionToggle', AudioDescriptionToggle);
 
 const AudioTracks = function(options) {
 
-  let player = this;
-  player.on('loadeddata', function () {
+  this.on('loadeddata', function() {
 
-    let videoEl = player.el().getElementsByTagName('video')[0];
+    let videoEl = this.el().getElementsByTagName('video')[0];
     let audioTracks = videoEl.audioTracks;
 
     if (audioTracks) {
@@ -47,8 +45,10 @@ const AudioTracks = function(options) {
         trackSettings: options,
         tracks: audioTracks
       };
-      var AudioDescriptionToggle = this.controlBar.addChild('AudioDescriptionToggle', buttonOptions);
-      player.controlBar.el().insertBefore(AudioDescriptionToggle.el(), player.controlBar.fullscreenToggle.el());
+      let toggle = this.controlBar.addChild('AudioDescriptionToggle', buttonOptions);
+
+      this.controlBar.el()
+        .insertBefore(toggle.el(), this.controlBar.fullscreenToggle.el());
     }
   });
 };
